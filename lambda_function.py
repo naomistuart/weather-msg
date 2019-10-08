@@ -35,7 +35,5 @@ def lambda_handler(event, context):
     msg = "*Sydney Weather Today*\n({})\nMax Temp: {}\nWeather: {}\nRain: {}\nSun Protection: {}".format(forecast_date, max_temp, weather_summary, rain_chance, uv_times)
 
     # send sms message using twilio
-    account_sid = os.environ.get("account_sid")
-    auth_token = os.environ.get("auth_token")
-    client = Client(account_sid, auth_token)
-    client.messages.create(body=msg, from_='+12562083994', to='+61420516468')
+    client = Client(os.environ.get("account_sid"), os.environ.get("auth_token"))
+    client.messages.create(body=msg, from_=os.environ.get("from_number"), to=os.environ.get("to_number"))
