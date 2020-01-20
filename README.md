@@ -32,5 +32,5 @@ A brief description of the steps in this project:
 
 
 ## References
-- https://towardsdatascience.com/make-data-acquisition-easy-with-aws-lambda-python-in-12-steps-33fe201d1bb4 
+- https://towardsdatascience.com/make-data-acquisition-easy-with-aws-lambda-python-in-12-steps-33fe201d1bb4
 - https://docs.aws.amazon.com/en_pv/lambda/latest/dg/python-programming-model.html
